@@ -1,0 +1,75 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+target/
+!**/src/main/**
+!**/src/test/**
+bin/
+
+### Maven ###
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+/.apt_generated/
+/.classpath/
+/.factorypath/
+/.project/
+/.settings/
+/.springBeans/
+/.sts4-cache/
+
+### IntelliJ IDEA ###
+/.idea/
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+/.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+### Compiled Output ###
+/dist
+/tmp
+/out-tsc
+
+### Only Exists If Bazel Was Run ###
+/bazel-out
+
+### Dependencies NodeJs ###
+/node_modules
+/node
+
+### Profiling Files ###
+chrome-profiler-events*.json
+speed-measure-plugin*.json
+
+### IDEs And Editors ###
+/.c9/
+*.launch
+*.sublime-workspace
+
+### misc ###
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+### System Files ###
+.DS_Store
+Thumbs.db
