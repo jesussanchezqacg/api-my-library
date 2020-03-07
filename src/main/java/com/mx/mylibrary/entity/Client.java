@@ -8,49 +8,49 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 @Data
-@Entity(name = "client")
-@Table(name = "client", schema = "dbmylibrary")
+@Entity(name = "CLIENT")
+@Table(name = "CLIENT", schema = "dbmylibrary")
 public class Client {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "ID")
     private int id;
 
-    @Column(name = "name", nullable = false)
+    @Column(name = "FIRST_NAME", nullable = false)
     private String name;
 
-    @Column(name = "last_name", nullable = false)
+    @Column(name = "LAST_NAME", nullable = false)
     private String lastName;
 
-    @Formula("name||' '||lastName")
+    @Formula("FIRST_NAME||' '||LAST_NAME")
     private String fullName;
 
-    @Column(name = "\"age\"", nullable = false)
+    @Column(name = "EDAD", nullable = false)
     private int age;
 
-    @Column(name = "gender", nullable = false)
+    @Column(name = "GENDER", nullable = false)
     private char gender;
 
-    @Column(name = "birth_date", nullable = false)
+    @Column(name = "BIRTH_DATE", nullable = false)
     private Timestamp birthDate;
 
-    @Column(name = "address", nullable = false)
+    @Column(name = "ADRESS", nullable = false)
     private String address;
 
-    @Column(name = "email")
+    @Column(name = "EMAIL")
     private String email;
 
-    @Column(name = "phone")
+    @Column(name = "TELEPHONE")
     private String phone;
 
-    @Column(name = "rfc")
+    @Column(name = "RFC")
     private String rfc;
 
-    @Column(name = "curp")
+    @Column(name = "CURP")
     private String curp;
 
-    @Column(name = "status", insertable = false, nullable = false, columnDefinition = "NUMERIC DEFAULT 1")
+    @Column(name = "STATUS", insertable = false, nullable = false, columnDefinition = "NUMERIC DEFAULT 1")
     @Type(type = "org.hibernate.type.NumericBooleanType")
     private boolean status;
 }

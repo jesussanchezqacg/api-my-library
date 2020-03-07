@@ -6,31 +6,31 @@ import org.hibernate.annotations.Type;
 import javax.persistence.*;
 
 @Data
-@Entity(name = "book")
-@Table(name = "book", schema = "dbmylibrary")
+@Entity(name = "BOOK")
+@Table(name = "BOOK", schema = "dbmylibrary")
 public class Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "ID")
     private int id;
 
-    @Column(name = "title", nullable = false)
+    @Column(name = "TITLE", nullable = false)
     private String title;
 
-    @Column(name = "author", nullable = false)
+    @Column(name = "AUTHOR", nullable = false)
     private String author;
 
-    @Column(name = "category", nullable = false)
+    @Column(name = "CATEGORY", nullable = false)
     private String category;
 
-    @Column(name = "\"year\"", nullable = false)
+    @Column(name = "ANO", nullable = false)
     private int year;
 
-    @Column(name = "publishing_house", nullable = false)
+    @Column(name = "PUBLISHING_HOUSE", nullable = false)
     private String publishingHouse;
 
-    @Column(name = "status", insertable = false, nullable = false, columnDefinition = "NUMERIC DEFAULT 1")
+    @Column(name = "STATUS", insertable = false, nullable = false, columnDefinition = "NUMERIC DEFAULT 1")
     @Type(type = "org.hibernate.type.NumericBooleanType")
     private boolean status;
 }
