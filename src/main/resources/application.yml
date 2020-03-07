@@ -7,8 +7,8 @@ spring:
   datasource:
     plataform: postgres
     driverClassName: org.postgresql.Driver
-    #url: jdbc:postgresql://ijwuesrkigcmja:2a6b8b359da230c0abdee31ecbd365cd4bdbf2051098c79188d7064ce2f22a1c@ec2-54-225-237-84.compute-1.amazonaws.com:5432/dadlba8rt8eoru?useSSL=false
-    url: jdbc:postgresql://ec2-54-225-237-84.compute-1.amazonaws.com:5432/dadlba8rt8eoru?useSSL=false&sslmode=require
+    url: jdbc:postgresql://ijwuesrkigcmja:2a6b8b359da230c0abdee31ecbd365cd4bdbf2051098c79188d7064ce2f22a1c@ec2-54-225-237-84.compute-1.amazonaws.com:5432/dadlba8rt8eoru?useSSL=false
+    #url: jdbc:postgresql://ec2-54-225-237-84.compute-1.amazonaws.com:5432/dadlba8rt8eoru?useSSL=false&sslmode=require
     username: ijwuesrkigcmja
     password: 2a6b8b359da230c0abdee31ecbd365cd4bdbf2051098c79188d7064ce2f22a1c
   h2:
